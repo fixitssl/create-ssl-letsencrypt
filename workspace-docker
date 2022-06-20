@@ -1,0 +1,4 @@
+sudo yum install -y docker
+sudo service docker start
+sudo docker -v
+sudo docker run hello-world
