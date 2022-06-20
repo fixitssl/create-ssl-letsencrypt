@@ -1,4 +1,13 @@
+# Run these commands on the Amazon Workspace terminal window to set up docker
+# Install docker
 sudo yum install -y docker
+# start the docker service on the Workspace
 sudo service docker start
-sudo docker -v
-sudo docker run hello-world
+# Create a group to run docker images
+sudo usermod -aG docker ${USER}
+# Stop typing 'sudo' before every docker command
+su - ${USER}
+# Check that docker is installed properly
+docker -v
+docker run hello-world
+#You can now run workspace-certbot.sh
