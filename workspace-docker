@@ -10,4 +10,6 @@ su - ${USER}
 # Check that docker is installed properly
 docker -v
 docker run hello-world
+docker info
+docker ps -a
 #You can now run workspace-certbot.sh
